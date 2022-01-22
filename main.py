@@ -16,5 +16,5 @@ def direction(facing:str, turn:int) -> str:
          return "Error: 'turn' must be <int>"
     
     # Calculate end position direction index
-    end_position = (start_position+steps)%8
+    end_position = (start_position+steps) % len(directions)
     return directions[end_position]
